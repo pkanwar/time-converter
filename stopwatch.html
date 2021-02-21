@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="./css/stopwatch.css"> 
+    <script type="text/javascript" defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script type="text/javascript" defer src="./js/stopwatch.js" ></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Timestamp Converter
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Epoch Time Converter</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="stopwatch.html">Stopwatch</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="utility-grid" >
+            <div class="item" id="item1" >
+                <h4 class="subItem1" id="subTitle1">Stopwatch</h4>
+               
+                <div class="subItem1" >
+                    <table id="table1" class="table" >
+                        <tbody>
+                            <tr>
+                                <td colspan="3" height="30px" > </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" ><input id="stopwatchId" value="00:00:00" disabled ></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" height="30px" > </td>
+                            </tr>
+                            <tr>
+                                <td><input id="startBtn" type="button" value="Start" class="btn btn-success btn-lg" /></td>
+                                <td><input id="stopBtn" type="button" value="Stop" class="btn btn-danger btn-lg" /></td>
+                                <td><input id="resetBtn" type="button" value="Reset" class="btn btn-primary btn-lg" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+            <section class="stopwatchSection" >
+                <h3 class="title">What is Stopwatch?</h3>
+                <div class="stopwatchSubSection">
+                    <p>
+                        A stopwatch is used to measure the time interval of an event. It is a kind of watch that stands out for the accuracy 
+                        and precision with which it can measure the time of an event. It works by pressing a start button and then stopping it.
+                        It is also known as a chronometer and is used to measure fractions of time, usually short and accurately. Basically there
+                         are two types of stopwatch, Digital stopwatch, and Analog stopwatch.
+                    </p>
+                    <h4 class="subTitle" >How a stopwatch works</h4>
+                    <p>
+                        The operation of a stopwatch is to accurately count the time of an event. The timers are easy to use, to start the 
+                        count you must press a start button. Once the event is over, time stops on the stop button.
+                    </p>
+                    <p>
+                        The time covered by the recorded event will be displayed on the face of the wristwatch, as well as other common data,
+                        such as time and date. You can restart the stopwatch to count another event or event. There are wristwatches that have
+                        a chronometer, but there are also models that can be hung on the neck or carried in the pocket.
+                    </p>
+                    
+                </div>
+            </section>
+            
+        </div>
+       
+
+</body>
+</html>
