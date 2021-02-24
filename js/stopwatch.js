@@ -1,19 +1,28 @@
 const startBtn = document.querySelector('#startBtn');
 const stopBtn = document.querySelector('#stopBtn');
 const resetBtn = document.querySelector('#resetBtn');
+const splitBtn = document.querySelector('#splitBtn');
 const stopwatchTxt = document.querySelector('#stopwatchId');
+const container = document.querySelector('.container');
+const splitGrid = document.querySelector('.split-grid');
+const table = document.querySelector('#tableBody2');
+
 
 let startWatch;
 let hour = 0;
 let min = 0;
 let sec = 0;
 let startFlag = false;
-let stopFlag = false;
+let containerHeight = 850;
+let splitHeight = 100;
+let clickCount = 0;
+table.innerHTML = '';
 
 stopwatchTxt.value = '00:00:00';
 
 startBtn.addEventListener('click', () => {
     if (startFlag === false) {
+
         startWatch = setInterval(() => {
             startFlag = true;
             sec += 1;
@@ -63,9 +72,27 @@ stopBtn.addEventListener('click', () => {
 });
 
 resetBtn.addEventListener('click', () => {
-    stopwatchTxt.value = '00:00:00';
-    sec = 0;
-    min = 0;
-    hour = 0;
-    startFlag = false;
+    if (startFlag === true) {
+        clearInterval(startWatch);
+        startFlag = false;
+        stopwatchTxt.value = '00:00:00';
+        sec = 0;
+        min = 0;
+        hour = 0;
+        startFlag = false;
+    }
 })
+
+splitBtn.addEventListener('click', () => {
+    if (startFlag === true) {
+        clickCount += 1;
+        const timerVal = stopwatchTxt.value;
+        table.innerHTML += "<tr><td><input style='width:580px; height:30px; text-align: center; font-size: 20px;' disabled  value='" + clickCount + ". " + timerVal +"' /></td></tr>";
+        splitGrid.style.display = 'block';
+        containerHeight += 50;
+        splitHeight += 30;
+        splitGrid.style.height = `${splitHeight.toString()}px`;
+        console.log(containerHeight);
+        container.style.height = `${containerHeight.toString()}px`;
+    }
+});
