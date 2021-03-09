@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.max-width {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* navbar styling */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 30px;
+  z-index: 999;
+  background-color: #2F4F4F;
+  font-family: 'Poppins' sans-serif;
+  transition: all 0.3s ease;
+  height: 90px;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+#menu1 {
+  background-color: #2F4F4F;
+  font-size: 18px;
+  border: 0px;
+  float: right;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  font-weight: 700 ;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.home {
+  position: relative;
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 900px;
+  height: 300px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px #2F4F4F;
+}
+
+/* .home .item {
+  border: 2px solid black;
+} */
+
+.languageSelect {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 2fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 5px;    
+  width: 800px;
+}
+
+.button {
+  margin: 30px 300px 10px 60px;
+  width: 870px;
+}
+
+  
+.home .title {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins' sans-serif;
+  font-weight: 800;
+  color: #2F4F4F;
+  margin-top: 20px;
+  text-decoration: underline;
+} 
+  
+.home textarea {
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 3px 5px #008B8B;
+}
+  
+.IOBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+  
+.container {
+  margin-top: 120px;
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #C0C0C0;
+}
+
+.container .languageSelector {
+  width: 900px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.outputSection {
+    /* margin-top: 900px; */
+  width: 900px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  border: 2px solid #008B8B;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px #2F4F4F;
+  display: none;
+}
+  
+.outputSection .title {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Poppins' sans-serif;
+  font-weight: 800;
+  color: #2F4F4F;
+  margin-top: 20px;
+}
+  
+.outputSection textarea {
+  border-radius: 10px;
+  box-shadow: 3px 5px #008B8B;
+}
+  
+.outputBox {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#languageInput {
+  width: 800px;
+  height: 100px;
+  font-size: 20px;
+  border: 1px solid #008B8B;
+  color: #2F4F4F;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  padding-top: 20px;
+}
+  
+#languageInput:focus {
+  border: 2px solid #008B8B;
+}
+
+#languageOutput {
+  width: 800px; 
+  height: 100px;
+  color: #2F4F4F;
+  font-weight: 700;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#exchangeBtn {
+  width: 100px;
+  height: 40px;
+}
+
+#fromLang {
+  width: 130px;
+  height: 40px;
+}
+
+#convertBtn {
+  width: 150px;
+  height: 40px;
+}
+
+#resetBtn {
+  width: 150px;
+  height: 40px;
+}
