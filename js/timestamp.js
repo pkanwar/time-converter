@@ -71,4 +71,5 @@ clearBtn1.addEventListener('click', () => {
 clearBtn2.addEventListener('click', () => {
     timestampResult.value = '';
     epochDateResult.value = '';
+    timestampInput.value = '';
 });
