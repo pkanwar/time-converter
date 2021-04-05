@@ -1,0 +1,39 @@
+
+@media screen and (max-width: 1200px) {
+  #menu4 {
+    display: none;
+  }
+
+  #menu5 {
+    display: none;
+  }
+
+  #menu6 {
+    display: none;
+  }
+
+}
+  
+@media screen and (max-width: 750px) {
+  #menu1 {
+    display: none;
+  }
+    
+  #menu2 {
+    display: none;
+  }
+
+  #menu3 {
+    display: none;
+  }
+
+  #menu4 {
+    display: none;
+  }
+
+  #menu6 {
+    display: none;
+  }
+}
+  
+  
